@@ -8,6 +8,7 @@
 import SwiftUI
 import Firebase
 
+
 struct DisplayView: View {
     @ObservedObject var viewmodel = FirestoreManager()
     

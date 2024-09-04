@@ -25,6 +25,10 @@
 		0FD63C9D2B84793E002B51E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FD63C9C2B84793E002B51E2 /* GoogleService-Info.plist */; };
 		0FD63C9F2B85E54B002B51E2 /* CoordinateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD63C9E2B85E54B002B51E2 /* CoordinateModel.swift */; };
 		396C97FB2B62117F00850CA4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396C97FA2B62117F00850CA4 /* Profile.swift */; };
+		3970F26B2C8842700033C5A2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3970F26A2C8842700033C5A2 /* HomeView.swift */; };
+		3970F26F2C8847CF0033C5A2 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3970F26E2C8847CF0033C5A2 /* UserDetail.swift */; };
+		3970F2712C884B9D0033C5A2 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3970F2702C884B9D0033C5A2 /* HomeListView.swift */; };
+		3970F2732C884EA80033C5A2 /* UserlistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3970F2722C884EA80033C5A2 /* UserlistModel.swift */; };
 		3985F9272B3D630C005F3208 /* Smart_position_systemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */; };
 		3985F92B2B3D630F005F3208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3985F92A2B3D630F005F3208 /* Assets.xcassets */; };
 		3985F92E2B3D630F005F3208 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3985F92D2B3D630F005F3208 /* Preview Assets.xcassets */; };
@@ -53,6 +57,10 @@
 		0FD63C9C2B84793E002B51E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FD63C9E2B85E54B002B51E2 /* CoordinateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateModel.swift; sourceTree = "<group>"; };
 		396C97FA2B62117F00850CA4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		3970F26A2C8842700033C5A2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3970F26E2C8847CF0033C5A2 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		3970F2702C884B9D0033C5A2 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
+		3970F2722C884EA80033C5A2 /* UserlistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserlistModel.swift; sourceTree = "<group>"; };
 		3985F9232B3D630C005F3208 /* Smart_position_system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smart_position_system.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_position_systemApp.swift; sourceTree = "<group>"; };
 		3985F92A2B3D630F005F3208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +100,7 @@
 		0F179E0C2B8DD3C60030C1D7 /* Main_View */ = {
 			isa = PBXGroup;
 			children = (
+				3970F2672C8842060033C5A2 /* Home_View */,
 				3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */,
 				0FD63C962B844DAE002B51E2 /* FloorPlan_Test */,
 				393398D52B8C58C8004B852C /* BottomBar */,
@@ -151,6 +160,17 @@
 				3985F94B2B3D6C30005F3208 /* WelcomeView.swift */,
 			);
 			name = BottomBar;
+			sourceTree = "<group>";
+		};
+		3970F2672C8842060033C5A2 /* Home_View */ = {
+			isa = PBXGroup;
+			children = (
+				3970F26A2C8842700033C5A2 /* HomeView.swift */,
+				3970F2702C884B9D0033C5A2 /* HomeListView.swift */,
+				3970F26E2C8847CF0033C5A2 /* UserDetail.swift */,
+				3970F2722C884EA80033C5A2 /* UserlistModel.swift */,
+			);
+			path = Home_View;
 			sourceTree = "<group>";
 		};
 		3985F91A2B3D630C005F3208 = {
@@ -312,7 +332,9 @@
 			files = (
 				0FBD41A02B68AD7E0070185D /* SignInView.swift in Sources */,
 				3985F9392B3D651F005F3208 /* DrawParameters.swift in Sources */,
+				3970F2732C884EA80033C5A2 /* UserlistModel.swift in Sources */,
 				3985F9412B3D6532005F3208 /* RoomCaptureScanView.swift in Sources */,
+				3970F2712C884B9D0033C5A2 /* HomeListView.swift in Sources */,
 				3985F93C2B3D651F005F3208 /* FloorPlanSurface.swift in Sources */,
 				396C97FB2B62117F00850CA4 /* Profile.swift in Sources */,
 				3985F9482B3D6550005F3208 /* CGPoint+RotateAround.swift in Sources */,
@@ -325,11 +347,13 @@
 				3985F93B2B3D651F005F3208 /* FloorPlanObject.swift in Sources */,
 				0FD63C982B844DF3002B51E2 /* DisplayView.swift in Sources */,
 				0FD63C9B2B84504F002B51E2 /* FireStoreManager.swift in Sources */,
+				3970F26B2C8842700033C5A2 /* HomeView.swift in Sources */,
 				3985F9472B3D6550005F3208 /* simd_float4x4+EulerAnglesAndPosition.swift in Sources */,
 				0FBD419C2B68AD5F0070185D /* SignUpView.swift in Sources */,
 				0FBD419A2B68AD3D0070185D /* SignUpModel.swift in Sources */,
 				3985F93A2B3D651F005F3208 /* FloorPlanScene.swift in Sources */,
 				3985F9272B3D630C005F3208 /* Smart_position_systemApp.swift in Sources */,
+				3970F26F2C8847CF0033C5A2 /* UserDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

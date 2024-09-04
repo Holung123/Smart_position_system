@@ -300,8 +300,8 @@ struct WelcomeView: View {
             
         }
         TabView {
-                        RoomCaptureScanView().tabItem {
-                            NavigationLink(destination: RoomCaptureScanView()) {
+                        HomeView().tabItem {
+                            NavigationLink(destination: HomeView()) {
                                 Image(systemName: "car")
                                 Text("Trips") }.tag(1)
                         }
