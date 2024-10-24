@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -78,6 +78,10 @@
 		3985F94B2B3D6C30005F3208 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		391280CC2CCA44B700B7F054 /* Alert_View */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Alert_View; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		3985F9202B3D630C005F3208 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -100,6 +104,7 @@
 		0F179E0C2B8DD3C60030C1D7 /* Main_View */ = {
 			isa = PBXGroup;
 			children = (
+				391280CC2CCA44B700B7F054 /* Alert_View */,
 				3970F2672C8842060033C5A2 /* Home_View */,
 				3985F9262B3D630C005F3208 /* Smart_position_systemApp.swift */,
 				0FD63C962B844DAE002B51E2 /* FloorPlan_Test */,
@@ -259,6 +264,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				391280CC2CCA44B700B7F054 /* Alert_View */,
 			);
 			name = Smart_position_system;
 			packageProductDependencies = (
