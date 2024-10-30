@@ -11,11 +11,12 @@ import Firebase
 import FirebaseFirestore
 
 struct Anchor_Coordinate:Identifiable, Codable {
-   @DocumentID var id: String? = UUID().uuidString
-   var coordinate: [Float]
+    @DocumentID var id: String? = UUID().uuidString
+    var coordinate: [Float]
  }
 
 struct Tag_Coordinate:Identifiable, Codable {
-   @DocumentID var id: String? = UUID().uuidString
-   var coordinate: [Float]
+    @DocumentID var id: String? = UUID().uuidString
+    var coordinate: [Float]
+    var UserStatus: Bool
  }
