@@ -13,7 +13,7 @@ import Firebase
 import BackgroundTasks
 
 struct AlertView: View {
-    @ObservedObject var viewmodel = FirestoreManager()
+  
     
     var body: some View {
         
@@ -45,17 +45,29 @@ struct AlertView: View {
 private func handleBackGroundTask(task: BackgroundTask) {
     scheduleNextRefresh()
 }
+
 private func sendNotifcation(){
-    let content = UNMutableNotificationContent()
-    content.title = "Out of range"
-    content.subtitle = "is out of range"
-    content.sound = UNNotificationSound.default
+    @ObservedObject var viewmodel = FirestoreManager()
+    let status = false //Var For Check User Status
     
+    //**Fetch Data From Firebase*//
+    ForEach(viewmodel.Tag) { tag in
+        if tag.UserStatus{
+            let status = tag.UserStatus
+        }
+    }
     
-    // choose a random identifier
-    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
-           UNUserNotificationCenter.current().add(request)
-    
+    if status{
+        let content = UNMutableNotificationContent()
+        content.title = "Out of range"
+        content.subtitle = "is out of range"
+        content.sound = UNNotificationSound.default
+        
+        // choose a random identifier
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
+               UNUserNotificationCenter.current().add(request)
+    }
+  
 }
 private func scheduleNextRefresh() {
         let request = BGAppRefreshTaskRequest(identifier: "com.yourapp.checkLocation")

@@ -70,7 +70,8 @@ class FirestoreManager: ObservableObject {
                         print("coordinate:   " ,coordinate)
                         let floatCoordinates = coordinate.map { $0.floatValue }
                         print("float: ", floatCoordinates)
-                        return Tag_Coordinate(coordinate: floatCoordinates)
+                        let status = data["status"] as? Bool ?? false
+                        return Tag_Coordinate(coordinate: floatCoordinates,UserStatus:status);
                     }
                     //print(self.anchor[0])
                     
